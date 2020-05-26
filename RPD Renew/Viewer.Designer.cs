@@ -153,6 +153,10 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.NameKP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.komp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Last = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
@@ -188,10 +192,6 @@
             this.ADD = new System.Windows.Forms.TabPage();
             this.Comments = new System.Windows.Forms.TabPage();
             this.CommentTextBox = new System.Windows.Forms.TextBox();
-            this.NameKP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.komp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Last = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.main_menu.SuspendLayout();
             this.add_menu.SuspendLayout();
@@ -1272,10 +1272,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(3, 3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(310, 21);
+            this.label5.Size = new System.Drawing.Size(264, 19);
             this.label5.TabIndex = 0;
             this.label5.Text = "Цели освоения дисциплины (модуля)";
             // 
@@ -1380,6 +1380,30 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(505, 199);
             this.dataGridView1.TabIndex = 12;
+            // 
+            // NameKP
+            // 
+            this.NameKP.HeaderText = "Название";
+            this.NameKP.Name = "NameKP";
+            this.NameKP.Width = 190;
+            // 
+            // komp
+            // 
+            this.komp.HeaderText = "Компетенции";
+            this.komp.Name = "komp";
+            this.komp.Width = 190;
+            // 
+            // Sem
+            // 
+            this.Sem.HeaderText = "Семестр";
+            this.Sem.Name = "Sem";
+            this.Sem.Width = 70;
+            // 
+            // Last
+            // 
+            this.Last.HeaderText = "";
+            this.Last.Name = "Last";
+            this.Last.Width = 40;
             // 
             // textBox1
             // 
@@ -1757,30 +1781,6 @@
             this.CommentTextBox.Size = new System.Drawing.Size(987, 454);
             this.CommentTextBox.TabIndex = 2;
             // 
-            // NameKP
-            // 
-            this.NameKP.HeaderText = "Название";
-            this.NameKP.Name = "NameKP";
-            this.NameKP.Width = 190;
-            // 
-            // komp
-            // 
-            this.komp.HeaderText = "Компетенции";
-            this.komp.Name = "komp";
-            this.komp.Width = 190;
-            // 
-            // Sem
-            // 
-            this.Sem.HeaderText = "Семестр";
-            this.Sem.Name = "Sem";
-            this.Sem.Width = 70;
-            // 
-            // Last
-            // 
-            this.Last.HeaderText = "";
-            this.Last.Name = "Last";
-            this.Last.Width = 40;
-            // 
             // Viewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1955,7 +1955,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TextBox textBox15;
@@ -1986,5 +1985,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn komp;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Last;
+        public System.Windows.Forms.TextBox textBox3;
     }
 }

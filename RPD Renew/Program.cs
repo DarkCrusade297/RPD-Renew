@@ -16,7 +16,7 @@ namespace RPD_Renew
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Viewer());
+            Application.Run(new Choser());
         }
     }
 }
