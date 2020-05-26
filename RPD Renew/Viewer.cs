@@ -13,7 +13,6 @@ namespace RPD_Renew
 {
     public partial class Viewer : Form
     {
-        SqlConnection sql;
         public Viewer()
         {
             InitializeComponent();
